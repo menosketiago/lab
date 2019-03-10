@@ -1,2 +1,4 @@
 scrapper/thumbs/*
+!scrapper/thumbs/.gitkeep 
 scrapper/images/*
+!scrapper/images/.gitkeep 
