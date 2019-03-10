@@ -2,4 +2,4 @@
 
 ## Experiments 
 
-- Scrapper
+- Scrapper - A script to get images from my old portfolio
