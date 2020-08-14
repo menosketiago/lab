@@ -1,14 +1,17 @@
 # This script scrapes my old portfolio site for content and images
 
+import os
+import sys
 import requests
 import html5lib
+
 from bs4 import BeautifulSoup
 from csv import writer
 
 response = requests.get('http://cargocollective.com/menosketiago')
 soup = BeautifulSoup(response.text, 'html5lib')
 
-path_root = '/Users/tiagoa/repos/lab/scrapper/'
+path_root = os.path.dirname(sys.modules['__main__'].__file__)
 path_thumbs = path_root + 'thumbs/'
 path_images = path_root + 'images/'
 
